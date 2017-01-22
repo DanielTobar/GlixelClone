@@ -1,0 +1,84 @@
+#one{background-color: blue;}
+#two{background-color: darkblue;}
+#three{background-color: skyblue;}
+#navBar{
+  width: 110%;
+  height: 92px;
+  background-color: rgb(245, 64, 86);
+  margin: -10px;
+  position:fixed;
+}
+#navBarSpacer{
+  height: 80px;
+  background-color: black;
+  width: 100%;
+  margin-top: -10px;
+}
+.anime{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  animation: move 5s alternate backwards ;
+  animation-iteration-count: 1;
+  background-color: blue;
+}
+.main{
+  width: 100%;
+  height: 1000px;
+  /*background-color: red;*/
+  display: flex;
+  justify-content: center;
+}
+#logIn{
+  position: fixed;
+  top: 119px;
+  right: 110px;
+  height: 400px;
+  width: 400px;
+  background-color: green;
+}
+
+.column{
+  margin: 15px;
+  margin-top: 40px;
+  width: 400px;
+}
+
+#allNotices{
+  border:solid black;
+  width:800px;
+}
+@media (max-width:1880px) {
+  #logIn{
+      background-color: blue;
+    right:100px ;
+  }
+}
+@media (max-width:1821px) {
+  #logIn{
+    background-color: black;
+    right:60px ;
+  }
+}
+@media (max-width:1716px) {
+  #logIn{
+    background-color: blue;
+    right:28px ;
+  }
+}
+@media (max-width:1587px) {
+  #logIn{
+    background-color: black;
+    right:6px ;
+  }
+}
+@keyframes move {
+  0%{
+    transform: translate(-200px) rotateY(360deg);
+  }
+  50%{
+  }
+  100%{
+    transform: translate(800px ) rotateY(0deg);
+  }
+}
